@@ -12,7 +12,10 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SwiftTryCatch", path: "Sources"
+            name: "SwiftTryCatch",
+            path: "Sources",
+            publicHeadersPath: ".",
+            cSettings: [.headerSearchPath(".")]
         )
     ]
 )
